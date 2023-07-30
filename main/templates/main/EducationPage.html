@@ -1,0 +1,217 @@
+{% extends 'main/base.html' %} 
+
+{% block title %}
+My Education
+{% endblock %}
+
+{% block content %}
+<section class="jumbotron text-left bg-white">
+    <div class="hstack">
+        <div class="container">
+            <div class="card-group">
+                
+                <div class="card">
+                    <h2 class="card-title card-header text-center"> A-Levels </h2>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="table-responsive">
+                                <table class="table table-striped-hover table-border table-sm">
+                                    <thead class="table-group-divider">
+                                        <tr>
+                                        <th> A-Level </th>
+                                        <th> Predicted Grades </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                        <td> Computer Science </td>
+                                        <td> A* </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> Mathematics </td>
+                                        <td> A* </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> Further Mathematics </td>
+                                        <td> A* </td>
+                                        </tr>
+
+                                        <tr> 
+                                        <td> EPQ </td>
+                                        <td> A* </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p>
+                                My EPQ was on "Does the benefits of AI
+                development in the medical field and
+                microeconomics outweigh the negatives
+                caused by AI development in a Western
+                developed country, during the years 2010
+                and onwards?"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="card-title card-header text-center"> GCSEs </h2>
+                    <div class="card-body">
+                        <div class="card-text">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped-hover table-border table-sm">
+                                    <thead class="table-group-divider">
+                                        <tr>
+                                        <th> GCSE </th>
+                                        <th> Achieved Grade </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                        <td> Mathematics </td>
+                                        <td> 9 </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> BTEC Business Studies </td>
+                                        <td> Distinction* </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> History </td>
+                                        <td> 8 </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> English Language </td>
+                                        <td> 8 </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> Computer Science </td>
+                                        <td> 7 </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> Geography </td>
+                                        <td> 7 </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> English Literature </td>
+                                        <td> 7 </td>
+                                        </tr>
+
+                                        <tr>
+                                        <td> Combined Sciences </td>
+                                        <td> 6-6 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="jumbotron text-left bg-white">
+    <div class="container">
+    <h2> My University Applications </h2>
+
+        <div class="hstack">
+            <center>
+                <div class="row">
+                    <div class="col">        
+                        <div class="card-group">             
+                            <div class="card-body">
+                                <h2 class="card-title">Cambridge</h2>
+                                <center>
+                                    {% load static %}
+                                    <img class="card-img-top" src="{% static "main/media/Cambridge.png" %}" alt="Cambridge University Logo" style="width: 100px; height: 100px;"/></center>
+                                
+                                <div class="card-text text-danger"> Interviewed and rejected </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card-body">
+                                <h2 class="card-title">Imperial</h2>
+                                {% load static %}
+                                <img class="card-img-top" src="{% static "main/media/Imperial.png" %}" alt="Imperial College London University Logo" style="width: 100px; height: 100px;"/>
+                                <div class="card-text text-danger"> Rejected </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card-body">
+                                <h2 class="card-title">Warwick</h2>
+                                {% load static %}
+                                <img class="card-img-top" src="{% static "main/media/Warwick.png" %}" alt="Warwick University Logo" style="width: 100px; height: 100px;"/>
+                                <div class="card-text text-success"> Accepted and firmed </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card-body">
+                                <h2 class="card-title">Bath</h2>
+                                {% load static %}
+                                <img class="card-img-top" src="{% static "main/media/Bath.png" %}" alt="Bath University Logo" style="width: 100px; height: 100px;"/>
+                                <div class="card-text text-success"> Accepted </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card-body">
+                                <h2 class="card-title">Loughborough</h2>
+                                {% load static %}
+                                <img class="card-img-top" src="{% static "main/media/Loughborough.png" %}" alt="Loughborough University Logo" style="width: 100px; height: 100px;"/>
+                                <div class="card-text text-success"> Accepted and insured </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    
+    </div>
+</section>
+
+<div class="container">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal"> Next Steps </button>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body jumbotron text-left">
+                    I'm hoping to explore more into AI, ML and Data Science at Warwick.
+                    <br>
+                    Alongside joining various societies to improve my technical skills and exploer different interests.
+                    <br>
+                    I'm on the fence of following a corporate role or going into academia.
+                </div>
+                <br>
+                <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
